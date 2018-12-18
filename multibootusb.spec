@@ -19,7 +19,7 @@ Requires:	python-six
 Requires:	polkit
 Requires:	p7zip
 Suggests:	qemu
-BuildArch:	noarch
+#BuildArch:	noarch
 
 %description
 MultiBootUSB is a cross platform* software/utility to create multi boot live 
