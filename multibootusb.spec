@@ -6,7 +6,7 @@ Group:		File tools
 Summary:	Create multiboot live Linux on a USB disk
 Url:		http://multibootusb.org
 Source0:	https://github.com/mbusb/multibootusb/archive/v%{version}.tar.gz?/%{name}-%{version}.tar.gz
-#Source1:	%{name}.rpmlintrc
+Source1:	%{name}.rpmlintrc
 
 BuildRequires:	python-setuptools
 BuildRequires:	pkgconfig(python)
