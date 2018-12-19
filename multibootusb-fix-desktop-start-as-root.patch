@@ -1,0 +1,12 @@
+Index: data/multibootusb.desktop
+===================================================================
+--- data/multibootusb.desktop
++++ data/multibootusb.desktop	2018-12-19 04:06:51.366117407 +0100
+@@ -3,6 +3,6 @@
+ Name=multibootusb
+ Comment=Install multiple Linux Operating System on USB
+ Icon=multibootusb
+-Exec=multibootusb-pkexec
++Exec=kdesu multibootusb
+ Categories=System;
+ StartupNotify=true

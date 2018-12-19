@@ -1,12 +1,14 @@
 Name:		multibootusb
 Version:	9.2.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		File tools
 Summary:	Create multiboot live Linux on a USB disk
 Url:		http://multibootusb.org
 Source0:	https://github.com/mbusb/multibootusb/archive/v%{version}.tar.gz?/%{name}-%{version}.tar.gz
 Source1:	%{name}.rpmlintrc
+# Dirty but needed. Allow to run app from .desktop file as root. W/o we can't. Only CLI works. If anyone know better solution, pls fix it. (penguin)
+Patch0:  	multibootusb-fix-desktop-start-as-root.patch
 
 BuildRequires:	python-setuptools
 BuildRequires:	pkgconfig(python)
@@ -44,8 +46,7 @@ if you wish.
 
 %prep
 %setup -q
-#patch0 -p1 -b .policykit
-#patch1 -p1
+%patch0 -p0
 
 %build
 

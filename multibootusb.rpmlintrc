@@ -1,3 +1,6 @@
 addFilter("E: arch-independent-package-contains-binary-or-object")
 addFilter("W: non-executable-script")
 addFilter("E: unstripped-binary-or-object")
+addFilter("E: zero-length")
+addFilter("E: non-executable-script")
+addFilter("E: empty-debuginfo-package")
