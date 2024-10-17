@@ -6,7 +6,7 @@ Release:	5
 License:	GPLv2+
 Group:		File tools
 Summary:	Create multiboot live Linux on a USB disk
-Url:		http://multibootusb.org
+Url:		https://multibootusb.org
 Source0:	https://github.com/mbusb/multibootusb/archive/v%{version}.tar.gz?/%{name}-%{version}.tar.gz
 Source1:	%{name}.rpmlintrc
 # Dirty but needed. Allow to run app from .desktop file as root. W/o we can't. Only CLI works. If anyone know better solution, pls fix it. (penguin)
