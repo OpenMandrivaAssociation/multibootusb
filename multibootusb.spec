@@ -2,7 +2,7 @@
 
 Name:		multibootusb
 Version:	9.2.0
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		File tools
 Summary:	Create multiboot live Linux on a USB disk
